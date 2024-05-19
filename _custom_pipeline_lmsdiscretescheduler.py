@@ -9,7 +9,8 @@ from PIL import Image
 from utils import clean_text_prompt, ddyymm_hhmmss
 
 # Config
-TORCH_DEVICE = 'mps'
+# TORCH_DEVICE = 'mps'
+TORCH_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 SEED = 123
 
 # Load the autoencoder model

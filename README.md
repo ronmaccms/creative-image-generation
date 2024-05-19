@@ -16,7 +16,7 @@ conda create -n diffusers -y python=3.11
 conda activate diffusers
 
 # Install dependencies
-pip install diffusers transformers torch accelerate
+pip install diffusers transformers torch accelerate scipy imageio matplotlib opencv-python
 
 # Optionally, install useful libraries
 pip install scipy imageio matplotlib opencv-python

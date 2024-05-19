@@ -21,7 +21,7 @@ STEPS = 60
 # canny_image = load_image("outputs/240423_020904_manual-canny.png")
 
 PROMPT = "an eastern island stone statue at the British Museum surrounded by tourists, 8k, masterpiece"
-PROMPT = "an eastern island stone statue at the British Museum surrounded by people visiting the museum taking photos, 8k, masterpiece"
+# PROMPT = "an eastern island stone statue at the British Museum surrounded by people visiting the museum taking photos, 8k, masterpiece"
 canny_image = load_image("inputs/sketch-190419_london-british-museum-hoa-hokakanaia_canny.png")
 # download an image
 # image = np.array(canny_image)

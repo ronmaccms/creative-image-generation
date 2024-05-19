@@ -9,6 +9,10 @@ Most samples in this repository should work in Google Colab free, but it's conve
 Here's how to create a Python environment with Anaconda.
 
 ```sh
+#disable IPv6 in Network Adapters on your Dell laptop running Windows
+# search in windows for ncpa.cpl
+
+
 # Create an Anaconda environment
 conda create -n diffusers -y python=3.11
 
@@ -20,6 +24,13 @@ pip install diffusers transformers torch accelerate scipy imageio matplotlib ope
 
 # Optionally, install useful libraries
 pip install scipy imageio matplotlib opencv-python
+
+pip install svgwrite
+
+pip install ipython
+
+
+python .\txt2img_stable_diffusion.py
 ```
 
 ## General utils

@@ -5,11 +5,13 @@ Diffusion with a stable diffusion pipeline.
 from diffusers import StableDiffusionPipeline
 from utils import clean_text_prompt, ddyymm_hhmmss
 import torch
+print(torch.cuda.is_available())
 
 # Config
 STEPS = 35
 SEED = 0
-TORCH_DEVICE = 'mps'
+TORCH_DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+# print(f"Using device: {TORCH_DEVICE}")
 
 # Create a Stable Diffusion pipeline
 pipe = StableDiffusionPipeline.from_pretrained('runwayml/stable-diffusion-v1-5')
